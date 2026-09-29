@@ -1,7 +1,7 @@
 library(terra)
 
-base <- "/Volumes/K1/climate_data"
-out <- "/Users/khkr/Documents/New project/CCPOP_work/audit"
+base_dir <- Sys.getenv("CLIMATE_DATA_DIR")
+out_dir  <- Sys.getenv("CLIMATE_OUTPUT_DIR")
 dir.create(out, recursive = TRUE, showWarnings = FALSE)
 
 rasters <- c(
